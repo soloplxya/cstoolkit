@@ -128,7 +128,7 @@ button.style-1::after {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: pink;
+    background-color: orangered;
     z-index: -1;
     border-radius: 0.35rem;
     border: solid 2px black;
