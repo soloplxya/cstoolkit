@@ -1,0 +1,35 @@
+<html>
+<head> 
+    <link rel="stylesheet" type="text/css"  href="{{ url_for('static', filename='ip_to_binary.scss') }}"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+    <!-- for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="header"> 
+        <a href="/"><button class="back__button" id="back__button"><i class="fa fa-chevron-left"></i></button></a>
+        <h1 class="header__title" id="header__title">IP ADDRESS TO BINARY CONVERTER</h1>
+    </div>
+    <form method="POST"> 
+    <div class="cards">
+        <div class="card card-1"> 
+            <h1 class="card__title"> INPUT </h1>
+            <p class="card__input__div"> 
+            <input type="text" name="ip_address" placeholder="Key in the IP Address" required> </input>
+            <button class="style-1" type="submit">Submit ⚡</button>
+            </p>   
+        </div>
+        <div class="card card-2">
+            <h1 class="card__title"> OUTPUT </h1>
+            <p class="card__output__div">
+                <h2 class="card__result"> {{test}} </h2>
+            </p>
+        </div>
+    </div> 
+    </form>
+  
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<html>
+<head> 
+    <link rel="stylesheet" type="text/css"  href="{{ url_for('static', filename='index.css') }}"> 
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+</head>
+<body>
+    <div class="heading"> 
+        <h1 class="heading__title"> Computer Science Tool Kit for NUS Students </h1>
+        <p class="heading__credits"><a class="heading__link">Designed by Shaine Goh</a></p>
+    </div>
+    <!-- card components-->
+    <div class="container"> 
+        <div class="cards"> 
+            <div class="card card-1"> 
+                <h2 class="card__title">CS2105 IP address to binary converter</h2>
+                <p class="card__button__div"> 
+                    <a href="{{ url_for('ip_to_binary') }}"><button class="card__button butt-1">Click</button></a>
+                </p>
+            </div>
+            <div class="card card-2">
+                <h2 class="card__title">CS2100 MIPS instructions converter</h2>
+                <p class="card__button__div"> 
+                    <a href="/mips"><button class="card__button butt-2">Click</button></a>
+                </p>
+            </div>
+            <div class="card card-3">
+                <h2 class="card__title">Truth Table Generator</h2>
+                <p class="card__button__div"> 
+                    <a href="/truthtable"><button class="card__button butt-3" onclick="">Click</button></a>
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+</html>

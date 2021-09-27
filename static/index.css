@@ -1,0 +1,125 @@
+body {
+    background-color: plum;
+    font-family: Quicksand; 
+    font-size: large;
+}
+
+.heading {
+    text-align: center;
+}
+
+.heading__title {
+    font-weight: 600;
+    text-align: center;
+}
+
+.heading__credits {
+    font-weight: 400; 
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card:hover {
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+    transform: scale(1.01);
+}
+
+.card__title {
+    text-align: center;
+}
+
+.card {
+    margin: 20px;
+    padding: 30px;
+    width: 500px;
+    min-height: 200px;
+    display: grid;
+    grid-template-rows: 20px 50px 1fr 50px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.35);
+    transition: all 0.2s;
+  }
+  
+.card__button {
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 50px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.card__button__div {
+    grid-row: 4/5;
+    align-self: center;
+    text-align: center;
+}
+
+.butt-1::after {
+    content: "";
+    background-color: lightblue;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+}
+
+.butt-2::after {
+    content: "";
+    background-color: #FEC8D8;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+}
+
+.butt-3::after {
+    content: "";
+    background-color: #e6d1f2;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+}
+
+  
+.card-1 {
+    border: solid 2px black;
+    background: radial-gradient(#1fe4f5, #3fbafe);
+}
+
+.card-2 {
+    border: solid 2px black;
+    background: radial-gradient(#fbc1cc, #fa99b2);
+}
+
+.card-3 {
+    border: solid 2px black;
+    background: radial-gradient(#76b2fe, #b69efe);
+}
+
+.card-4 {
+    background: radial-gradient(#60efbc, #58d5c9);
+}
+
+.card-5 {
+    background: radial-gradient(#f588d8, #c0a3e5);
+}
+
+
